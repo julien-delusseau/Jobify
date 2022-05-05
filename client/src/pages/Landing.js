@@ -15,9 +15,8 @@ const Landing = () => {
             job <span>tracking</span> app
           </h1>
           <p>
-            I'm baby selvage etsy authentic air plant mixtape bitters. Poutine
-            swag disrupt, pok pok gochujang yes plz flannel. Literally PBR&B
-            iPhone paleo cardigan lo-fi.
+            Jobify est une application vous permettant de sauvegarder vos
+            recherches d'emploi.
           </p>
           <Link to="/register" className="btn btn-hero">
             Login / Register
