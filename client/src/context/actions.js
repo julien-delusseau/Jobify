@@ -1,0 +1,39 @@
+export const DISPLAY_ALERT = "SHOW_ALERT";
+export const CLEAR_ALERT = "CLEAR_ALERT";
+
+export const TOGGLE_SIDEBAR = "TOGGLE_SIDEBAR";
+
+export const HANDLE_CHANGE = "HANDLE_CHANGE";
+
+export const CLEAR_VALUES = "CLEAR_VALUES";
+
+export const SETUP_USER = "SETUP_USER";
+export const SETUP_USER_SUCCESS = "SETUP_USER_SUCCESS";
+export const SETUP_USER_ERROR = "SETUP_USER_ERROR";
+
+export const UPDATE_USER = "UPDATE_USER";
+export const UPDATE_USER_SUCCESS = "UPDATE_USER_SUCCESS";
+export const UPDATE_USER_ERROR = "UPDATE_USER_ERROR";
+
+export const LOGOUT_USER = "LOGOUT_USER";
+
+export const CREATE_JOB = "CREATE_JOB";
+export const CREATE_JOB_SUCCESS = "CREATE_JOB_SUCCESS";
+export const CREATE_JOB_ERROR = "CREATE_JOB_ERROR";
+
+export const GET_JOBS = "GET_JOBS";
+export const GET_JOBS_SUCCESS = "GET_JOBS_SUCCESS";
+
+export const EDIT_JOB = "EDIT_JOB";
+export const EDIT_JOB_BEGIN = "EDIT_JOB_BEGIN";
+export const EDIT_JOB_SUCCESS = "EDIT_JOB_SUCCESS";
+export const EDIT_JOB_ERROR = "EDIT_JOB_ERROR";
+
+export const DELETE_JOB = "DELETE_JOB";
+
+export const SHOW_STATS = "SHOW_STATS";
+export const SHOW_STATS_SUCCESS = "SHOW_STATS_SUCCESS";
+
+export const CLEAR_FILTERS = "CLEAR_FILTERS";
+
+export const CHANGE_PAGE = "CHANGE_PAGE";
