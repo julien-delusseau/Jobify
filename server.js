@@ -2,7 +2,6 @@ import express from "express";
 const app = express();
 import dotenv from "dotenv";
 dotenv.config();
-import morgan from "morgan";
 import { connectDB } from "./database/database.js";
 import "express-async-errors";
 import authMiddleware from "./middleware/auth.js";
@@ -22,11 +21,6 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // Middleware
 app.use(express.json()).use(helmet()).use(xss());
-
-// Production
-if (process.env.NODE_ENV !== "production") {
-  app.use(morgan("dev"));
-}
 
 // Database
 connectDB();

@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const sequelize = new Sequelize(
-  "jobify",
+  process.env.DB_NAME,
   process.env.DB_USER,
   process.env.DB_PASS,
   {
