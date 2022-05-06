@@ -1,5 +1,6 @@
 import express from "express";
 const app = express();
+import http from "http";
 import dotenv from "dotenv";
 dotenv.config();
 import { connectDB } from "./database/database.js";
@@ -24,6 +25,11 @@ app.use(express.json()).use(helmet()).use(xss());
 
 // Database
 connectDB();
+
+// Ping Heroku
+setInterval(() => {
+  http.get("https://jobify-sern.herokuapp.com/");
+}, 300000);
 
 app.get("/api", (req, res) => {
   res.send({ message: "Hello World" });
