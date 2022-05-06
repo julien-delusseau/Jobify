@@ -28,7 +28,7 @@ connectDB();
 
 // Ping Heroku
 setInterval(() => {
-  http.get("https://jobify-sern.herokuapp.com/");
+  http.get("http://jobify-sern.herokuapp.com/");
 }, 300000);
 
 app.get("/api", (req, res) => {
